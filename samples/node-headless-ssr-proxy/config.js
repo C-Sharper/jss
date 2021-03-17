@@ -96,7 +96,9 @@ const config = {
 		headers: {
 			"accept-encoding": "gzip, deflate"
 		},
-		xfwd: true
+		xfwd: true,
+    // Fix memory leak in Layout Service call
+    ws: false,
 	},
 	/**
 	 * Custom headers handling.
